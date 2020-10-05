@@ -132,10 +132,10 @@ client.connect((err) => {
       })
       .catch((err) => res.status(500).send(err));
   });
-});
 
-app.get("/", (req, res) => {
-  res.send("working");
+  app.get("/", (req, res) => {
+    res.send("working");
+  });
 });
 
 const port = 5000;
