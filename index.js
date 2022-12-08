@@ -62,6 +62,7 @@ client.connect((err) => {
       });
   });
 
+  // get selected services
   app.post("/api/selected-service", (req, res) => {
     const auth = req.body.token;
     // verify id token
@@ -116,8 +117,8 @@ client.connect((err) => {
     });
   });
 
-  // delete single volunteers list
 
+  // delete single volunteers list
   app.post("/api/delete-entry", (req, res) => {
     const serviceId = req.body.id;
 
